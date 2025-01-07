@@ -1,0 +1,30 @@
+# Ignore build directory
+/build/
+
+# Ignore CMake files
+CMakeCache.txt
+CMakeFiles/
+
+# Ignore IDE files (adjust based on your IDE)
+.idea/        # IntelliJ or CLion
+.vscode/      # Visual Studio Code
+
+# Ignore compiled object files
+*.o
+*.obj
+*.out
+*.exe
+
+# Ignore debug/release directories
+/debug/
+*/debug/
+*/release/
+
+# Ignore dependency directories (e.g., OpenCV or other libraries)
+libs/
+
+# Ignore temporary files
+*.log
+*.tmp
+*.swp
+*.bak
