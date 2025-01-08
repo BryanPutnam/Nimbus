@@ -1,6 +1,6 @@
 # C++ Compiler and flags
 CXX = g++
-CXXFLAGS = -Wall -Wextra -std=c++17
+CXXFLAGS = -Wall -Wextra -std=c++17 -Iinclude
 
 # Define directories
 SRC_DIR = src
@@ -16,7 +16,7 @@ main: $(OBJ_DIR)/main.o
 
 # Compile object file
 $(OBJ_DIR)/main.o: $(SRC_DIR)/main.cpp
-	$(CXX) -c $(SRC_DIR)/main.cpp -o $(OBJ_DIR)/main.o
+	$(CXX) -c $(SRC_DIR)/main.cpp $(CXXFLAGS) -o $(OBJ_DIR)/main.o
 
 # Clean build files
 clean:
